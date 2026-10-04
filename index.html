@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#100e0c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>ASHLINE</title>
+  <script type="module" crossorigin src="./assets/index-CjRGxMyv.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DVZWJOGx.css">
+</head>
+<body class="mode-title">
+  <canvas id="view"></canvas>
+  <div id="hurt"></div>
+  <div id="hud" hidden>
+    <div id="top">
+      <div id="obj-kicker">ASHLINE</div>
+      <div id="obj-name">Cinder Berth</div>
+      <div id="obj-text"></div>
+      <div id="bossbar" hidden><div id="bossfill"></div><span id="bossphase">The Bailiff</span></div>
+      <div id="hint"></div>
+    </div>
+    <div id="vitals">
+      <div><span class="k">HP</span> <b id="hp">100</b></div>
+      <div><span class="k">AR</span> <b id="ar">30</b></div>
+    </div>
+    <div id="ammo-block">
+      <div id="ammo">30 / 90</div>
+      <div id="cells">CELLS 2</div>
+      <div id="reload"><i id="reload-i"></i></div>
+    </div>
+    <div id="cross"><span></span><span></span><span></span><span></span></div>
+    <div id="prompt"></div>
+  </div>
+  <div id="touch">
+    <div id="stick" aria-hidden="true"><div id="nub"></div></div>
+    <div id="buttons">
+      <button type="button" id="btn-dash" data-act="dash">DASH</button>
+      <button type="button" id="btn-jump" data-act="jump">JUMP</button>
+      <button type="button" id="btn-hard" data-act="heavy">HARD</button>
+      <button type="button" id="btn-fire" data-act="fire">FIRE</button>
+    </div>
+    <button type="button" id="btn-use" data-act="use">USE</button>
+  </div>
+  <div id="rotate">Rotate for a wider sightline. The contract still runs.</div>
+  <div id="title">
+    <div class="card">
+      <div class="kicker">FIELD CONTRACT</div>
+      <h1>ASHLINE</h1>
+      <p>Cade Voss walks the ashline the Hollow Ledger thought it had buried.</p>
+      <div class="tap">Tap to start</div>
+    </div>
+  </div>
+  <div id="pause" hidden>
+    <div class="card">
+      <div class="kicker">HOLDING</div>
+      <h2>Paused</h2>
+      <button type="button" id="btn-resume">RESUME</button>
+      <button type="button" id="btn-restart">RESTART LEVEL</button>
+      <button type="button" id="btn-mute">MUTE</button>
+      <p id="pause-hint" class="fine"></p>
+    </div>
+  </div>
+  <div id="inter" hidden>
+    <div class="card">
+      <div class="kicker" id="inter-kicker">NEXT FLOOR</div>
+      <h2 id="inter-name"></h2>
+      <p id="inter-text"></p>
+      <button type="button" id="btn-continue">CONTINUE</button>
+    </div>
+  </div>
+  <div id="down" hidden>
+    <div class="card">
+      <div class="kicker">SIGNAL LOST</div>
+      <h2>Down</h2>
+      <p>The suit catches. This floor only. The rest of the contract stands.</p>
+    </div>
+  </div>
+  <div id="done" hidden>
+    <div class="card">
+      <div class="kicker">CONTRACT CLOSED</div>
+      <h2>Ashline held</h2>
+      <p>The Bailiff is down. The Hollow Ledger's holding floor is quiet, and Cade Voss is still walking.</p>
+      <button type="button" id="btn-again">WALK IT AGAIN</button>
+    </div>
+  </div>
+</body>
+</html>
